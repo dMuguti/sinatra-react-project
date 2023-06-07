@@ -1,9 +1,0 @@
-class CreatePosts < ActiveRecord::Mrake db:migrateigration[5.2]
-  def change
-    create_table :posts do |t|
-      t.string :title
-      t.text :body
-      t.belongs_to :user, index: true
-    end
-  end
-end
